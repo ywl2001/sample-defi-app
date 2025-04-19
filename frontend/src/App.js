@@ -50,6 +50,7 @@ function App() {
 
   return (
     <div style={{ padding: "2rem" }}>
+      <h1>Learn React</h1>
       <h2><span role="img" aria-label="lock">🔐</span> Lock Contract</h2>
       <p><strong>Connected Wallet:</strong> {account}</p>
       {unlockTime && (

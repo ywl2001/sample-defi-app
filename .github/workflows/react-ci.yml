@@ -26,14 +26,17 @@ jobs:
     # Install dependencies
     - name: Install dependencies
       run: npm install
+      working-directory: ./frontend
 
     # Run tests
     - name: Run tests
       run: npm test -- --coverage
+      working-directory: ./frontend
 
     # Build the React app (optional)
     - name: Build the app
       run: npm run build
+      working-directory: ./frontend
 
     # Deploy the app (optional)
     # Add deployment step if needed
