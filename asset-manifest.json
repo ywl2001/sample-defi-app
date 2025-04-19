@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/sample-defi-app/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/sample-defi-app/static/js/main.857dd486.chunk.js",
+    "main.js.map": "/sample-defi-app/static/js/main.857dd486.chunk.js.map",
+    "runtime-main.js": "/sample-defi-app/static/js/runtime-main.37b2022f.js",
+    "runtime-main.js.map": "/sample-defi-app/static/js/runtime-main.37b2022f.js.map",
+    "static/js/2.358a63ce.chunk.js": "/sample-defi-app/static/js/2.358a63ce.chunk.js",
+    "static/js/2.358a63ce.chunk.js.map": "/sample-defi-app/static/js/2.358a63ce.chunk.js.map",
+    "static/js/3.937dc1a2.chunk.js": "/sample-defi-app/static/js/3.937dc1a2.chunk.js",
+    "static/js/3.937dc1a2.chunk.js.map": "/sample-defi-app/static/js/3.937dc1a2.chunk.js.map",
+    "index.html": "/sample-defi-app/index.html",
+    "precache-manifest.fe19c8ce2c8ee0c120e5ca924eec426a.js": "/sample-defi-app/precache-manifest.fe19c8ce2c8ee0c120e5ca924eec426a.js",
+    "service-worker.js": "/sample-defi-app/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/sample-defi-app/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.358a63ce.chunk.js.LICENSE.txt": "/sample-defi-app/static/js/2.358a63ce.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.37b2022f.js",
+    "static/js/2.358a63ce.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.857dd486.chunk.js"
+  ]
+}
