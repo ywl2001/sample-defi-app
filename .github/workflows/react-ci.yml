@@ -26,6 +26,8 @@ jobs:
       - name: Build project
         run: npm run build
         working-directory: ./frontend
+        env:
+          NODE_OPTIONS: --openssl-legacy-provider
 
       - name: Run tests
         run: npm test -- --watchAll=false
