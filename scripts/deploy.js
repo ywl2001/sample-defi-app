@@ -30,11 +30,16 @@ main()
 
 // This script deploys a smart contract to the Ethereum blockchain using Hardhat.
 // run this script using the command `npx hardhat run scripts/deploy.js --network sepolia`,
-/*Verify the contract on Etherscan using the command:
-npx hardhat verify --network sepolia 0x4938c21847702DE9eCd4a39df96a66D82EA5A5aC 1744827569
+// https://sepolia.etherscan.io/address/0xdd889a2b6ad69e387b6d1719813d8b01058640fc
+// Verify the contract on Etherscan using the command:
+/* npx hardhat verify --network sepolia 0x4938c21847702DE9eCd4a39df96a66D82EA5A5aC 1744827569
 The contract 0x4938c21847702DE9eCd4a39df96a66D82EA5A5aC has already been verified on the block explorer. If you're trying to verify a partially verified contract, please use the --force flag.
 https://sepolia.etherscan.io/address/0x4938c21847702DE9eCd4a39df96a66D82EA5A5aC#code
 
 The contract 0x4938c21847702DE9eCd4a39df96a66D82EA5A5aC has already been verified on Sourcify.
 https://repo.sourcify.dev/contracts/full_match/11155111/0x4938c21847702DE9eCd4a39df96a66D82EA5A5aC/
+*/
+/* npx hardhat verify --network sepolia 0x83d46Db62AD3670E76B6a4690f61A738e288775A 1744884572
+https://sepolia.etherscan.io/address/0x83d46Db62AD3670E76B6a4690f61A738e288775A
+https://repo.sourcify.dev/11155111/0x83d46Db62AD3670E76B6a4690f61A738e288775A
 */
