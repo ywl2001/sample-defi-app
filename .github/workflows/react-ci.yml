@@ -1,0 +1,42 @@
+name: React CI
+
+on:
+  push:
+    branches:
+      - main  # 在主分支推送時觸發
+  pull_request:
+    branches:
+      - main  # 當有 PR 合併到主分支時觸發
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Checkout the code
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    # Set up Node.js environment
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'  # 使用的 Node.js 版本
+
+    # Install dependencies
+    - name: Install dependencies
+      run: npm install
+      working-directory: ./frontend
+
+    # Run tests
+    - name: Run tests
+      run: npm test -- --coverage
+      working-directory: ./frontend
+
+    # Build the React app (optional)
+    - name: Build the app
+      run: npm run build
+      working-directory: ./frontend
+
+    # Deploy the app (optional)
+    # Add deployment step if needed
