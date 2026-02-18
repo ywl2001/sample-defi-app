@@ -1,16 +1,25 @@
 require("@nomicfoundation/hardhat-toolbox");
 require("dotenv").config();
 
+const networks = {
+  hardhat: {
+    chainId: 31337
+  }
+};
+
+// 只在環境變數存在時才添加 sepolia 網絡配置
+if (process.env.SEPOLIA_RPC_URL && process.env.PRIVATE_KEY) {
+  networks.sepolia = {
+    url: process.env.SEPOLIA_RPC_URL,
+    accounts: [`0x${process.env.PRIVATE_KEY}`]
+  };
+}
+
 module.exports = {
   solidity: "0.8.28",
-  networks: {
-    sepolia: {
-      url: process.env.SEPOLIA_RPC_URL,
-      accounts: [`0x${process.env.PRIVATE_KEY}`]
-    },
-  },
+  networks,
   etherscan: {
-    apiKey: process.env.ETHERSCAN_API_KEY,
+    apiKey: process.env.ETHERSCAN_API_KEY || "",
   },
   sourcify:{
     enabled: true,
